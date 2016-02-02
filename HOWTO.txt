@@ -22,9 +22,14 @@ replace
  
  TODO:
 
- 1.get title 1 and title 2
+ 1.get title 1 and title 2 (sometimes only title1 available)
  
  2.get main messages
+ 
+   &nbsp;</p> to find the start
+    <div style="border-bottom              > " >>>to find the beginning.>>>
+  
+  sed -n '/&nbsp\;<\/p>/,/<div style="border-bottom/p' 308969.shtm\?id=308969.html | sed -e '1s/.*&nbsp\;<\/p>//' -e '$s/<div style="border-bottom.*//'        >>>>>>>>>>>>>>
  
  3.get images
  
