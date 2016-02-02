@@ -1,0 +1,37 @@
+awk -vRS="</title>" '/<title>/{gsub(/.*<title>|\n+/,"");print;exit}'  *.html
+
+ for a in *.html; do  
+ cp $a  ../output/"$(awk -vRS="</title>" '/<title>/{gsub(/.*<title>|\n+/,"");print;exit}'  "$a").html"   ;
+  done
+
+sed -n 's/<title>\(.*\)<\/title>/\1/Ip'  template.html
+
+
+for a in *.html; do
+{
+
+}
+
+done
+
+fix images:
+replace 
+ ""<img src="/upload" >
+ to <img src="http://news.sciencenet.cn/upload" >
+
+ 
+ TODO:
+
+ 1.get title 1 and title 2
+ 
+ 2.get main messages
+ 
+ 3.get images
+ 
+ 
+<p>
+ &nbsp;</p>
+<p style="text-indent: 2em">
+ 
+ <div style="border-bottom: solid 1px #bfc89d; vertical-align: bottom; width: 100%;
+                                                height: 20px">
